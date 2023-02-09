@@ -1,0 +1,87 @@
+.blog-article-card {
+    max-width: 555px;
+    transition: 0.3s all;
+    
+    &:hover .blog-article-card__content  {
+        background-color: $white;
+    }
+    
+    &:hover .blog-article-card__title  {
+        color: $orange;
+    }
+    
+    &:hover span  {
+        color: $brand-primary-blue;
+    }
+    
+    &:hover .blog-article-card__img  {
+        background: linear-gradient(359.91deg, rgba(0, 62, 93, 0.9) 0.08%, rgba(0, 62, 93, 0) 70.03%), linear-gradient(0deg, rgba(2, 62, 93, 0.7), rgba(2, 62, 93, 0.7)), url(3450564.jpg);
+        border-radius: 20px;
+        transition: 0.3s all;
+    }
+    
+    &:hover path  {
+        fill: $brand-primary-blue;
+        transition: 0.3s all;
+    }
+    
+    &__img {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        transition: 0.3s all;
+        border-radius: 20px 20px 0 0;
+        
+        img {
+            position: relative;
+            z-index: -1;
+        }
+    }
+    
+    &__content {
+        width: 100%;
+        background-color: $white-grey;
+        border-radius: 20px 20px 20px 20px;
+        padding: 30px 30px 40px 30px;
+        transition: 0.5s;
+        margin-top: -45px;
+    
+        &-top {
+            display: flex;
+            column-gap: 40px;
+            
+            path {
+                fill: #888888;
+                transition: 0.3s all;
+            }
+            
+            span {
+                display: inline-block;
+                padding-left: 5px;
+                transition: 0.3s all;
+                font-size: 14px;
+                font-family: "Open Sans", sans-serif;
+                color: #888;
+            }
+        }
+    }
+    
+    &__title {
+        font-size: 22px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        padding-top: 10px;
+        color: $brand-primary-blue;
+        transition: 0.3s all;
+    }
+    
+    &__text {
+        color: $brand-primary-blue;
+        font-family: "Open Sans", sans-serif;
+        padding-top: 20px;
+    }
+    
+    &__btn {
+        padding-top: 30px;
+    }
+}

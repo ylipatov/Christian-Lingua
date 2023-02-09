@@ -1,0 +1,112 @@
+.cl-about-us {
+
+    @media (min-width: 992px) {
+        margin-bottom: 100px;
+    }
+
+    &__our-mission {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 70px;
+        flex-direction: column-reverse;
+        text-align: center;
+
+        @media (min-width: 992px) {
+            flex-direction: row;
+            text-align: unset;
+        }
+    }
+
+    &__desc {
+        max-width: 100%;
+        font-size: 16px;
+        font-family: "Open Sans", sans-serif;
+
+        @media (min-width: 992px) {
+            max-width: 555px;
+        }
+
+        span {
+             padding-bottom: 15px;
+             display: block;
+
+            @media (min-width: 992px) {
+                padding-bottom: 30px;
+            }
+
+             &:last-child {
+                 padding-bottom: 0;
+             }
+         }
+    }
+
+    &__image {
+        max-width: 100%;
+        @media (min-width: 992px) {
+            max-width: 458px;
+        }
+    }
+
+    &__statement {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        margin-top: 60px;
+
+        @media (min-width: 992px) {
+            margin-top: 100px;
+        }
+
+        &-wrap {
+            max-width: 100%;
+            width: 100%;
+            background: linear-gradient(100.35deg, rgba(222, 131, 13, 0.1) 24.65%, rgba(222, 131, 13, 0.2) 66.87%);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            font-family: "Open Sans", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: #000;
+
+            @media (min-width: 1110px) {
+                max-width: 100%;
+                width: 100%;
+                padding: 30px 60px 30px 210px;
+                font-size: 16px;
+            }
+
+            span {
+                font-weight: 700;
+                font-size: 16px;
+
+                @media (min-width: 992px) {
+                    font-size: 18px;
+                }
+            }
+
+            a {
+                color: $orange;
+                font-weight: 700;
+                transition: 0.3s all;
+
+                &:hover {
+                    text-decoration: none;
+                    color: $brand-primary-blue;
+                }
+            }
+        }
+
+        &-img {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            display: none;
+
+            @media (min-width: 1100px) {
+                display: block;
+            }
+        }
+    }
+}

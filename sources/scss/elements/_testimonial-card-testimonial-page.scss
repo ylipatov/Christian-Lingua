@@ -1,0 +1,63 @@
+.testimonial-card-testimonial-page {
+  position: relative;
+  background-color: $white-grey;
+  border-radius: 20px;
+  height: auto;
+  display: flex;
+  gap: math-clamp(10, 60);
+  padding: 20px;
+  min-height: 205px;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+  flex-direction: column;
+
+  @media (min-width: 992px) {
+    flex-direction: row;
+    align-items: center;
+    padding: 40px;
+  }
+
+  &__element {
+    position: absolute;
+    top: 52%;
+    transform: translateY(-50%);
+    left: 18%;
+    display: none;
+
+    @media (min-width: 992px) {
+      display: block;
+    }
+  }
+
+  &__top {
+    display: flex;
+    column-gap: 20px;
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  &__photo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+  }
+
+  &__name {
+    font-size: 18px;
+    color: $brand-primary-blue;
+    font-weight: 700;
+  }
+
+  &__position {
+    font-size: 14px;
+    color: $orange;
+  }
+
+  &__desc {
+    font-style: italic;
+    color: $dark-grey;
+    padding-top: 7px;
+  }
+}

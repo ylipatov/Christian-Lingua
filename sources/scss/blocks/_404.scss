@@ -1,0 +1,51 @@
+.cl-error-404 {
+    position: relative;
+    height: 740px;
+    margin-bottom: 170px;
+    
+    &:before {
+        content: '';
+        position: absolute;
+        background-image: url(../img/error-404-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: inherit;
+    }
+    
+    &__img {
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 110px;
+        text-align: center;
+        position: relative;
+    }
+    
+    &__title,
+    &__text {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+    }
+    
+    &__title {
+        font-size: 48px;
+        color: $brand-primary-blue;
+        font-weight: 300;
+        
+        span {
+            font-weight: 700;
+        }
+    }
+    
+    &__text {
+        font-size: 18px;
+        color: $brand-primary-blue;
+    }
+    
+    &__btn {
+        text-align: center;
+        padding-top: 50px;
+    }
+}

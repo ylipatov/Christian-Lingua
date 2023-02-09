@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- dir="rtl" -->
+<head>
+    <!-- Site Title -->
+    <title>@@if(context.titlePage){@@titlePage}@@if(!context.titlePage){Title}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="">
+    <link rel="apple-touch-icon-precomposed" href="">
+    <meta name="theme-color" content="#2775FF">
+    <meta name="keywords" content="themeforest, theme, html, template"/>
+    <meta name="description" content="themeforest, theme, html, template"/>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header__top">
+        <div class="cl-container">
+            <div class="header__top-content">
+                <div class="header__mail">
+                    <img src="../assets/img/mail-icon.svg" alt="">
+                    <span>info@christianlingua.com</span>
+                </div>
+
+                <div class="header__tel">
+                    <img src="../assets/img/tel-icon.svg" alt="">
+                    <span>+1 828 351 9559</span>
+                </div>
+
+                <div class="header__social">
+                    <a href="#">
+                        <img src="../assets/img/fb-icon.svg" alt="">
+                    </a>
+
+                    <a href="#">
+                        <img src="../assets/img/in-icon.svg" alt="">
+                    </a>
+
+                    <a href="#">
+                        <img src="../assets/img/y-icon.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cl-container d-flex align-items-center pt-15">
+        <div class="header__col">
+            <a href="#" class="header__logo">
+                <img src="../assets/img/header-logo.svg" alt="">
+            </a>
+        </div>
+
+        <div class="header__col-auto">
+            <ul class="header__menu">
+                <li class="menu-item"><!-- menu-item-has-children -->
+                    <a href="#">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">About Us</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Our Services</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Portfolio</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Testimonials</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Blog</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+
+            @@include("../elements/buttons.html", {
+            "text": "Get a Free Quote",
+            "class": "btn-orange_header"
+            })
+
+            <button class="header__menu-open js-open-mobile-menu">
+                <span><span></span></span>
+            </button>
+
+        </div>
+    </div>
+
+</header>
+
+
+<div class="header__mobile js-header-menu">
+    <ul class="header__mobile-menu">
+        <li class="menu-item"><!-- menu-item-has-children -->
+            <a href="#">Home</a>
+        </li>
+        <li class="menu-item">
+            <a href="#">About Us</a>
+        </li>
+        <li class="menu-item">
+            <a href="#">Our Services</a>
+        </li>
+        <li class="menu-item">
+            <a href="#">Portfolio</a>
+        </li>
+        <li class="menu-item">
+            <a href="#">Testimonials</a>
+        </li>
+        <li class="menu-item">
+            <a href="#">Blog</a>
+        </li>
+        <li class="menu-item">
+            <a href="#">Contact Us</a>
+        </li>
+    </ul>
+
+
+    <div class="header__mobile-content">
+        <div class="header__mail">
+            <img src="../assets/img/mail-icon-mobile.svg" alt="">
+            <span>info@christianlingua.com</span>
+        </div>
+
+        <div class="header__tel">
+            <img src="../assets/img/tel-icon-mobile.svg" alt="">
+            <span>+1 828 351 9559</span>
+        </div>
+
+        <div class="header__social">
+            <a href="#">
+                <img src="../assets/img/fb-icon-mobile.svg" alt="">
+            </a>
+
+            <a href="#">
+                <img src="../assets/img/in-icon-mobile.svg" alt="">
+            </a>
+
+            <a href="#">
+                <img src="../assets/img/y-icon-mobile.svg" alt="">
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<!-- The Main Wrapper -->
+<main class="main-wrapper">

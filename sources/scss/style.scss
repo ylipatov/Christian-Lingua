@@ -1,0 +1,55 @@
+// Vendor
+@import "./../node_modules/swiper/swiper";
+
+// Bootstrap
+@import "bootstrap";
+
+// Variables
+@import "variables";
+@import "extend";
+
+// Utilities
+@import "reboot";
+@import "init";
+@import "spacing";
+//@import "spacing-rtl";
+@import "fonts";
+@import "colors";
+@import "font-options";
+@import "other-options";
+@import "header";
+@import "general";
+@import "footer";
+
+
+// Blocks
+@import "blocks/cl-header-preview";
+@import "blocks/cl-trust-us-company";
+@import "blocks/cl-why-block";
+@import "blocks/cl-translation-services-home-page-block";
+@import "blocks/cl-our-blog";
+@import "blocks/cl-about-us";
+@import "blocks/cl-statement-faith";
+@import "blocks/cl-translation-services-page";
+@import "blocks/cl-our-portfolio";
+@import "blocks/cl-testimonials";
+@import "blocks/cl-blog";
+@import "blocks/cl-contact-us";
+@import "blocks/404";
+@import "blocks/blog-article-page";
+
+// Elements
+@import "elements/buttons";
+@import "elements/services-card";
+@import "elements/testimonial-card-home-page";
+@import "elements/testimonial-card-testimonial-page";
+@import "elements/article-card-home-page";
+@import "elements/paginate";
+@import "elements/services-card-translation-page";
+@import "elements/portfolio-card";
+@import "elements/contact-us";
+@import "elements/subscribe-form";
+@import "elements/contacts-info";
+@import "elements/form-contact-page";
+@import "elements/title-page-block";
+@import "elements/blog-article-card";

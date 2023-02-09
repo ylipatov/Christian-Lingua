@@ -1,0 +1,45 @@
+.cl-our-blog {
+  padding: 80px 0;
+
+  @media (min-width: 576px) {
+    padding: 150px 0;
+  }
+
+  &__title {
+    font-family: Roboto, sans-serif;
+    font-size: 30px;
+    color: $brand-primary-blue;
+    text-align: center;
+    font-weight: 400;
+
+    @media (min-width: 768px) {
+      font-size: 40px;
+    }
+  }
+
+  &__article-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+    position: relative;
+    gap: 30px;
+
+    @media (min-width: 576px) {
+      padding-top: 50px;
+    }
+
+    @media (min-width: 1200px) {
+      justify-content: space-between;
+    }
+  }
+
+  &__btn {
+    text-align: center;
+    padding-top: 40px;
+
+    @media (min-width: 576px) {
+      padding-top: 50px;
+    }
+  }
+}

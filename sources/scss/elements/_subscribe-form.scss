@@ -1,0 +1,100 @@
+.subscribe-form {
+  background: linear-gradient(0deg, #CADDEF, #CADDEF), #FFFFFF;
+  border-radius: 20px;
+  padding: 30px 10px;
+
+  position: relative;
+
+  @media (min-width: 992px) {
+    padding: 43px 67px;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    @media (min-width: 992px) {
+      flex-direction: row;
+    }
+  }
+
+  &__title {
+    color: $brand-primary-blue;
+    font-family: Roboto, sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+
+    span {
+      padding-right: 5px;
+    }
+  }
+
+  .form {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 450px;
+    width: 100%;
+    position: relative;
+
+    &__cover {
+      display: flex;
+      position: relative;
+      align-items: center;
+    }
+
+    input {
+      max-width: 450px;
+      width: 100%;
+      background: #F8F9FB;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.03);
+      border-radius: 40px;
+      line-height: 48px;
+      border: none;
+      padding-left: 20px;
+    }
+
+    input:focus + label {
+      display: none !important;
+    }
+
+    label {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      color: #555;
+      font-size: 16px;
+
+    }
+  }
+
+  .subscribe-form__btn {
+    text-transform: uppercase;
+    border-radius: 40px;
+    background-color: $orange;
+    line-height: 50px;
+    padding: 0 25px;
+    display: inline-block;
+    color: $white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s all;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media (min-width: 992px) {
+      padding: 0 50px;
+    }
+
+    &:hover {
+      background: $brand-primary-blue;
+      text-decoration: none;
+      color: $white;
+    }
+  }
+}

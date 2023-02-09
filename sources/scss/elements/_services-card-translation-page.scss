@@ -1,0 +1,83 @@
+.services-card-translation-page {
+
+  $img: &;
+
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: $white;
+  border-radius: 20px;
+  height: auto;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+
+  @media (min-width: 992px) {
+    column-gap: 40px;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    padding-right: math-max(20, 50);
+    text-align: unset;
+  }
+
+  &:hover {
+
+    #{$img} {
+
+      &__img {
+        background-color: $white-grey;
+      }
+    }
+  }
+
+  &__img {
+    flex: 0 0 100%;
+    max-width: 100%;
+    border-radius: 20px;
+    background-color: transparent;
+    padding-top: 17px;
+    transition: 0.3s all;
+
+    @media (min-width: 768px) {
+      max-width: 294px;
+    }
+
+    img {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__content {
+
+    @media (min-width: 768px) {
+      padding: 15px 50px 15px 0;
+    }
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 1.6;
+    color: $brand-primary-blue;
+    transition: 0.3s all;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+    &:hover {
+      color: $orange;
+    }
+
+  }
+
+  &__desc {
+    max-width: 750px;
+    margin-bottom: 20px;
+  }
+}
+
+

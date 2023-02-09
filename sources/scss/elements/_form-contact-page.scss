@@ -1,0 +1,100 @@
+.form-contact-page {
+  flex-basis: 0;
+  flex-grow: 1;
+  width: 100%;
+  background: linear-gradient(0deg, #CADDEF, #CADDEF), #FFFFFF;
+  border-radius: 20px;
+  padding: 25px;
+
+  @media (min-width: 1200px) {
+    max-width: 555px;
+    padding: 50px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    &__wrap {
+      position: relative;
+
+      input {
+        background-color: $white-grey;
+        border-radius: 40px;
+        padding-left: 15px;
+        line-height: 46px;
+        border: 1px solid $white-grey;
+        width: 100%;
+        color: #000;
+
+        @media (min-width: 1200px) {
+          padding-left: 30px;
+        }
+      }
+
+      input:focus + label {
+        display: none!important;
+      }
+
+      label {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        line-height: 1.6;
+        font-family: "Open Sans",sans-serif;
+        color: #555;
+
+        @media (min-width: 1200px) {
+          left: 30px;
+        }
+      }
+
+      textarea {
+        width: 100%;
+        resize: none;
+        height: 175px;
+        border: none;
+        border-radius: 20px;
+        background-color: $white-grey;
+        outline: none;
+        padding-left: 15px;
+
+        @media (min-width: 1200px) {
+          padding-left: 30px;
+        }
+      }
+
+      textarea:focus + label {
+        display: none!important;
+      }
+
+      .desc-textarea {
+        position: absolute;
+        left: 15px;
+        top: 18px;
+
+        @media (min-width: 1200px) {
+          left: 30px;
+        }
+      }
+
+      .error {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $red;
+        display: none;
+      }
+    }
+  }
+
+  &__must-be {
+    text-align: right;
+    font-size: 14px;
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+  }
+}

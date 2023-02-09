@@ -1,0 +1,55 @@
+.contact-us {
+  background-color: $brand-primary-blue;
+  margin-top: 100px;
+  padding: 50px 0;
+
+  @media (min-width: 768px) {
+    margin-top: 50px;
+  }
+
+  &__wrap {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    @media (min-width: 1200px) {
+      flex-direction: row;
+      text-align-last: right;
+    }
+  }
+
+  span {
+    display: block;
+    font-size: 24px;
+    line-height: 1.6;
+    color: $white;
+  }
+
+  &__btn {
+    text-transform: uppercase;
+    border-radius: 40px;
+    background-color: $orange;
+    line-height: 50px;
+    padding: 0 50px;
+    display: inline-block;
+    color: $white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s all;
+    width: 100%;
+    text-align: center;
+
+    @media (min-width: 568px) {
+      width: max-content;
+    }
+
+    &:hover {
+      background: $white;
+      text-decoration: none;
+      color: $orange;
+    }
+  }
+}

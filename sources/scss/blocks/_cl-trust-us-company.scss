@@ -1,0 +1,60 @@
+.cl-trust-us-company {
+  padding: 50px 0 50px;
+  
+  @media (min-width: 992px) {
+    padding: 70px 0 120px;
+  }
+
+  &__title {
+    font-size: 30px;
+    color: $brand-primary-blue;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.2;
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    display: block;
+    
+    @media (min-width: 992px) {
+      font-size: 40px;
+    }
+    
+    span {
+      font-weight: 800;
+    }
+  }
+
+  &__logos-wrap {
+    padding-top: 50px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    row-gap: 50px;
+    justify-content: space-between;
+    
+    @media (min-width: 576px) {
+      justify-content: center;
+    }
+    
+    @media (min-width: 992px) {
+      justify-content: unset;
+    }
+  }
+
+  &__logos-item {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+    text-align: center;
+    justify-content: space-between;
+    
+    @media (min-width: 992px) {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

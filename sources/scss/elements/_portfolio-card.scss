@@ -1,0 +1,149 @@
+.portfolio-card {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: auto;
+  flex-direction: column;
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    height: 520px;
+  }
+
+  &__left-side {
+    height: 100%;
+    background: #F8F9FB;
+    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+
+    @media (min-width: 1200px) {
+      position: absolute;
+      left: 0;
+      max-width: 460px;
+    }
+
+    &-wrap {
+      position: relative;
+      display: block;
+    }
+  }
+
+  &__bookmark {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 4;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    background-color: $orange;
+    border-radius: 0 15px 15px 0;
+    padding: 0 10px;
+    font-size: 14px;
+
+    @media (min-width: 576px) {
+      left: 0;
+      top: 30px;
+      padding: 0 20px;
+      font-size: 16px;
+    }
+
+    span {
+      color: $white;
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+      display: block;
+      line-height: 38px;
+
+      @media (min-width: 576px) {
+        font-size: 16px;
+      }
+
+    }
+  }
+
+  &__image {
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 3;
+  }
+
+  &__content {
+    margin-top: -50px;
+    display: block;
+    background-color: $white;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+
+    @media (min-width: 992px) {
+      padding: 40px 50px 0 130px;
+      height: 460px;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 780px;
+      margin-top: 0;
+    }
+  }
+
+  &__name {
+    font-weight: 400;
+    font-size: 18px;
+
+    @media (min-width: 576px) {
+      font-size: 24px;
+    }
+  }
+
+  &__author {
+    font-weight: 700;
+    padding-top: 5px;
+    font-size: 18px;
+
+    @media (min-width: 576px) {
+      font-size: 24px;
+    }
+  }
+
+  &__name,
+  &__author {
+    text-transform: capitalize;
+    font-family: "Open Sans", sans-serif;
+    color: $brand-primary-blue;
+    margin: 0;
+  }
+
+  &__subtitle {
+    color: $orange;
+    font-size: 15px;
+    font-style: italic;
+    font-family: "Open Sans", sans-serif;
+    padding-top: 10px;
+    display: block;
+
+    @media (min-width: 576px) {
+      font-size: 18px;
+      padding-top: 20px;
+    }
+  }
+
+  &__text {
+    color: $brand-primary-blue;
+    font-size: 14px;
+    padding-top: 10px;
+    display: block;
+
+    @media (min-width: 576px) {
+      font-size: 16px;
+      padding-top: 20px;
+    }
+  }
+}

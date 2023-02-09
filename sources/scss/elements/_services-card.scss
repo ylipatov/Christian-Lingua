@@ -1,0 +1,56 @@
+.services-card {
+  display: inline-block;
+  background-color: $white;
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 160px;
+  max-height: 340px;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.3s all;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+
+  @media (min-width: 768px) {
+    max-width: 262px;
+    border-radius: 40px;
+  }
+
+  &:hover {
+    text-decoration: none;
+    background-color: $white-grey;
+
+    p {
+      color: $orange;
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 28px;
+  }
+
+  &__text,
+  &__desc {
+    color: $brand-primary-blue;
+    margin: 0;
+    padding: 0 10px;
+    transition: 0.3s all;
+
+    @media (min-width: 768px) {
+      padding: 0 20px;
+    }
+  }
+
+  &__desc {
+    padding: 0 10px 10px 10px;
+    font-weight: 700;
+
+    @media (min-width: 768px) {
+      padding: 0 20px 20px 20px;
+    }
+  }
+}

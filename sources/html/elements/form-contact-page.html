@@ -1,0 +1,37 @@
+<div class="form-contact-page">
+    <form action="" class="form">
+        <div class="form__wrap">
+            <input type="name" id="name">
+            <label for="name">Name</label>
+            <span class="error">Required</span>
+        </div>
+
+        <div class="form__wrap">
+            <input type="email" id="email">
+            <label for="email">Email</label>
+            <span class="error">Invalid Email</span>
+        </div>
+
+        <div class="form__wrap">
+            <input type="phone" id="phone">
+            <label for="phone">Phone Number</label>
+            <span class="error">Invalid Phone Number</span>
+        </div>
+
+        <div class="form__wrap">
+            <textarea name="text" id="description"></textarea>
+            <label class="desc-textarea" for="description">Project Description</label>
+        </div>
+    </form>
+
+    <div class="form-contact-page__must-be">
+        <span>*All fields must be filled</span>
+    </div>
+
+    @@include("../elements/buttons.html", {
+    "text": "submit form",
+    "class": "btn-orange_big"
+
+    })
+
+</div>

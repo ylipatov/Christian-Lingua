@@ -1,0 +1,175 @@
+.header {
+  position: relative;
+  z-index: 10;
+
+  &__top {
+    background-color: #003E5D;
+    display: none;
+
+    @media(min-width: 1200px) {
+      display: block;
+    }
+
+    &-content {
+      display: flex;
+      justify-content: flex-end;
+      padding: 7px 0;
+      column-gap: 30px;
+
+      span {
+        color: $white;
+        font-size: 14px;
+        line-height: 1.6;
+        font-weight: 400;
+      }
+    }
+  }
+
+  &__mail,
+  &__tel,
+  &__social {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+
+    a {
+      display: flex;
+    }
+  }
+
+  &__col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+
+  &__col-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+
+  &__logo {
+    display: inline-block;
+  }
+
+  &__menu {
+    margin: 0;
+    display: none;
+    list-style: none;
+    column-gap: 35px;
+
+    @media (min-width: 1200px) {
+      display: flex;
+    }
+
+    a {
+      text-decoration: none;
+      color: $brand-primary-blue;
+      opacity: 70%;
+      transition: 0.3s all;
+
+      &:active {
+        color: $brand-primary-blue;
+      }
+
+      &:hover {
+        color: $orange;
+        opacity: 100%;
+      }
+    }
+  }
+
+  &__menu-open {
+    border: none;
+    position: relative;
+    display: none;
+    padding: 0;
+
+    @media (max-width: 1199px) {
+      display: flex;
+
+      span {
+        height: 2px;
+        width: 35px;
+        background-color: $brand-primary-blue;
+        padding: 0;
+      }
+    }
+
+    &:before {
+      content: '';
+      height: 2px;
+      width: 27px;
+      background-color: $brand-primary-blue;
+      position: absolute;
+      top: -12px;
+      right: 0;
+    }
+
+    &:after {
+      content: '';
+      height: 2px;
+      width: 42px;
+      background-color: $brand-primary-blue;
+      position: absolute;
+      top: 12px;
+      right: 0;
+    }
+  }
+
+  /////Mobile
+
+  &__mobile {
+    display: none;
+    position: fixed;
+    top: 86px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 80px);
+    background-color: $white;
+    padding: 30px 20px 55px;
+    transform: translateX(100%);
+    transition: all .5s;
+    z-index: 9999;
+    flex-direction: column;
+    row-gap: 20px;
+
+    @media (max-width: 1199px) {
+      display: flex;
+    }
+
+    &.active {
+      transform: translateX(0);
+    }
+
+  }
+
+  &__mobile-menu {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    li {
+
+    }
+
+    a {
+      text-decoration: none;
+      color: $brand-primary-blue;
+      font-size: 24px;
+      line-height: 1.6;
+    }
+  }
+
+  &__mobile-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+}

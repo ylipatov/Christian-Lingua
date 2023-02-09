@@ -1,0 +1,107 @@
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+
+@@if(context.js){
+@@for (var i = 0; i < js.length; i++) {
+<script src="`+js[i]+`"></script>
+}
+}
+
+<footer class="footer">
+    <div class="cl-container">
+        <div class="footer__wrap">
+            <div class="footer__content-item footer__content-item_1">
+                <h3>Verse of the Day</h3>
+                <p>
+                    “I hasten and do not delay to keep your commandments.” — Psalm 119:60 Listen to chapter.
+                    Powered by BibleGateway.com.
+                </p>
+            </div>
+
+            <div class="footer__content-item footer__content-item_2">
+                <h3>Contact Us</h3>
+
+                <div class="footer__cover-country">
+
+                    <div class="footer__cover-country_item">
+                        <div class="footer__country-address">
+                            <img src="../assets/img/country-usa.png" alt="">
+                            <span>U.S.</span>
+                            <p>+1 828 351 9559</p>
+                            <p>(Mon-Fri, 8:00-17:00 EST)</p>
+                            <p>
+                                183 HomeStead Lane <br>
+                                Rutherfordton, NC 28139
+                            </p>
+                        </div>
+
+                        <div class="footer__country-address">
+                            <img src="../assets/img/country-ua.png" alt="">
+                            <span>Ukraine</span>
+                            <p>+38 093 677 1088</p>
+                            <p>(Mon-Fri, 8:00-17:00 EST)</p>
+                            <p>Lviv</p>
+                        </div>
+                    </div>
+
+                    <div class="footer__cover-country_item">
+                        <div class="footer__country-address">
+                            <img src="../assets/img/country-turkey.png" alt="#">
+                            <span>Turkey</span>
+                            <p>+90 551 136 6320</p>
+                            <p>Balikesir</p>
+                        </div>
+
+                        <div class="footer__country-address">
+                            <img src="../assets/img/country-estonia.png" alt="#">
+                            <span>Estonia</span>
+                            <p>+372 618 8387</p>
+                            <p>Tallinn</p>
+                        </div>
+
+                        <div class="footer__country-address">
+                            <img src="../assets/img/country-germany.png" alt="#">
+                            <span>Germany</span>
+                            <p>+49 1573 6722558</p>
+                            <p>Frankfurt</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__content-item footer__content-item_3">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+
+                @@include("../elements/buttons.html", {
+                "text": "Get a Free Quote",
+                "class": "btn-orange_footer"
+                })
+            </div>
+        </div>
+
+        <p class="footer__copyright">Copyright © 2006-2022 Christian Lingua | All rights reserved.</p>
+    </div>
+
+</footer>
+
+<div class="cl-container">
+
+</div>
+
+
+
+</body>
+
+</html>

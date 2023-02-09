@@ -1,0 +1,84 @@
+.cl-statement-faith {
+    margin-top: 50px;
+    margin-bottom: 60px;
+
+    @media (min-width: 992px) {
+        margin-bottom: 120px;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 40px;
+        color: $brand-primary-blue;
+        font-family: Roboto, sans-serif;
+        font-weight: 300;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    &__content {
+        background: #F8F9FB;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 30px 15px;
+        margin-top: 40px;
+
+        @media (min-width: 576px) {
+            padding: 60px;
+            margin-top: 50px;
+        }
+
+        &-wrap {
+            flex-wrap: wrap;
+            display: flex;
+            gap: 30px 60px;
+            justify-content: space-between;
+
+            @media (min-width: 1200px) {
+                gap: 0;
+            }
+        }
+
+        &-item {
+            max-width: 100%;
+            font-size: 18px;
+            font-family: "Open Sans", sans-serif;
+            position: relative;
+            padding-left: 30px;
+
+            @media (min-width: 1200px) {
+                max-width: 482px;
+            }
+
+            &:before  {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-image: url(../img/cross.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 15px;
+                height: 20px;
+            }
+        }
+
+        &-heading {
+            text-transform: uppercase;
+            color: $orange;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        &-author {
+            font-style: italic;
+            font-size: 16px;
+            color: #555;
+            display: block;
+        }
+    }
+}
