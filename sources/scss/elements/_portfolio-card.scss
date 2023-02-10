@@ -5,6 +5,10 @@
   align-items: center;
   height: auto;
   flex-direction: column;
+  
+  @:hover {
+    text-decoration: none;
+  }
 
   @media (min-width: 1200px) {
     flex-direction: row;
